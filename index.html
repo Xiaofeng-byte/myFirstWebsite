@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/b8e52178c7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OutDoor Views</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <video id="background-video" autoplay muted loop>
+        <source src="images/video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house" style="color: #7ED957;"></i> Home</a></li>
+                <li><a href="gallery.html"><i class="fa-solid fa-video" style="color: #7ED957;"></i> Videos</a></li>
+                <li><a href="about.html"><i class="fa-solid fa-address-card" style="color: #7ED957;"></i> About Us</a></li>
+                <li><a href="contact.html"><i class="fa-solid fa-envelope" style="color: #7ED957;"></i> Contact</a></li>
+                <li><a href="account.html"><i class="fa-solid fa-user" style="color: #7ED957;"></i> Account</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-home">
+        <h1 style="text-shadow: 0 0 1px #ffffff, 0 0 5px #ffffff, 0 0 10px #000000; font-size: 60px;">
+            <span class="Name" style="color: #7ED957;"></span>
+        </h1>
+        <script>
+            const text = "Outdoor Views!";
+            const span = document.querySelector(".Name");
+            let index = 0;
+
+            function typeText() {
+            if (index < text.length) {
+                span.textContent += text.charAt(index);
+                index++;
+                setTimeout(typeText, 100);
+            }
+            }
+            typeText();
+        </script>
+        <p style="font-size: 35px; text-shadow: 0 0 10px #000000;">Connect With <span style="color: greenyellow;">Nature</span> and Explore the World from Home</p>
+        </p>
+        </section>
+        <br>
+        <section id="Gallery">
+            <h2 style="text-shadow: 0 0 2.5px #000000;">Featured Videos</h2>
+            <div class="video-home" style="display: flex; gap: 20px; justify-content: center;">
+                <div>
+                    <iframe width="450" height="250" src="https://www.youtube.com/embed/T5PN33xCRfA" allowfullscreen="true"></iframe>
+                    <p>Walk in the Woods</p>
+                </div>
+                <div>
+                    <iframe width="450" height="250" src="https://www.youtube.com/embed/T5PN33xCRfA" allowfullscreen="true"></iframe>
+                    <p>City Exploration</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Outdoor Views</p>
+        </footer>
+    </body>
+</html>
